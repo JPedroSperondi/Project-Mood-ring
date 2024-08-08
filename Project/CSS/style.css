@@ -1,0 +1,1089 @@
+/*General body styling*/
+body{
+    margin: 0px;
+    background-color: #f8f8f8;
+}
+
+/*Genenal font styling*/
+h1,h2,h3,h4,h5,h6{
+    font-family: 'Poppins', sans-serif;
+}
+
+p,a,li,figcaption{
+    font-family: "Roboto",sans-serif;
+    font-size: 20px;
+    text-decoration: none;
+}
+
+/*general header styling*/
+header {
+    display: flex;
+    align-items: center;
+    height: 150px;
+    background-color: #caefe3;
+  }
+  
+  header > div {
+    flex-grow: 1;
+    height: 145px;
+    width: auto;
+  }
+  
+  header > div > img {
+    width: auto;
+    height: 100%;
+  }
+  
+  header > div:nth-child(2) {
+    display: flex;
+    justify-content: right;
+    padding-top: 10px;
+    position: relative;
+  }
+  
+  /* Navigation menu styling */
+  header > div > nav > .nav-links {
+    list-style: none;
+    padding-left: 0;
+    margin: 0;
+    display: flex;
+  }
+  
+  /*nav link styling*/
+
+  .nav-links a {
+    color: #052d0cfc; 
+    text-decoration: none;
+}
+  header > div > nav > .nav-links > li {
+    padding: 0 10px;
+  }
+
+  /*Styling the "bars" on mobile screens*/
+  header > div > .menu-toggle {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+  }
+  
+  header > div > .menu-toggle .bar {
+    background-color: #333;
+    height: 3px;
+    width: 25px;
+    margin: 4px 0;
+  }
+  
+/*general masthead styling*/
+.masthead{
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    background-image: url("../IMG/Mast.jpg");
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    height: 80vh;
+    }
+
+.masthead div{
+    display:flex;
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+    /*Giving some shadow behind the text*/
+    background-color: rgba(0,0,0,.3);
+
+}    
+
+/*Styling the masthead text*/
+.masthead div h1{
+    color:#f8f8f8;
+    font-size: 5em;
+
+}
+
+/*general main styling*/
+.M-A{
+    display:flex;
+}
+
+.M-A>main{
+    width: 70%;
+    background-color: #caefe3;
+}
+   
+.M-A>main>section{
+    width:100%;
+    height:auto;
+    display:flex;
+    padding-left: 10px;
+    text-align: center;
+ }
+
+/*Adjusting the div contaning the text*/
+ .M-A>main>section>div:nth-child(2){
+    width:40%;
+    height:auto;
+}
+
+
+.M-A>main>section>div{
+     width: 50%;
+     align-content:center;
+     
+}
+
+/*Adjusting the main images so it fits their div*/
+.M-A>main>section>div>img{
+       width: 90%;
+       height: auto;
+ }
+
+ /*Adjusting the aside images so it fits their div*/
+.M-A>aside>div>img{
+    height:75%;
+    padding-top:70px;
+    
+    
+}
+
+/*General aside styling*/
+ .M-A>Aside{
+    display:flex;
+    flex-direction: column;
+    align-content:center;
+    justify-content:center;
+    width: 30%;
+    height: auto;
+    background-color: #caefe3;
+    
+ }
+
+.M-A>Aside>div{
+    height:33%;
+    width:auto;
+}
+
+.M-A>aside>section>div{
+    height:100%;
+    width:auto;
+}
+
+
+.M-A>aside>div:nth-child(3){
+    padding-bottom:80px;
+}
+
+/*Styling all div inside main*/
+.M-A>main>div{
+    width:80%;
+    display:flex;
+    align-content:center;
+    justify-content:right;
+    padding-bottom:10px;
+    padding-top:50px;
+    
+}
+
+/*Styling the submit button*/
+.M-A>main>div>a{
+    padding: 10px 40px;
+    color: white;
+    background-color: #052d0cfc;
+    text-align: center;
+    /*round the corner*/
+    border-radius: 5px;
+}
+
+/*General footer styling*/
+footer{
+    display: flex;
+    background-color:#052d0cfc
+}
+
+footer>section>div>h2{
+   font-size:15px; 
+   color:white 
+}
+
+/*Styling the div's inside the footer*/
+
+footer>section:nth-child(1)>div{
+    padding-left:10px;
+}
+
+footer>section:nth-child(2){
+    width:75%;
+    
+}
+footer>section:nth-child(3)>div:nth-child(1){
+    text-align:center;
+}
+
+/*Styling the third div and the media logos*/
+footer>section:nth-child(3)>div:nth-child(2){
+    display:flex;
+    list-style:none;
+}
+
+footer>section:nth-child(3)>div:nth-child(2)>li>a{
+    padding-left:10px;
+    padding-right:10px;
+    color:white;
+}
+
+/*styling the div contaning the form*/
+footer>section:nth-child(2)>div{
+    
+    height:100%;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    padding-right:40px;
+}
+
+
+footer>section:nth-child(2)>div>form{
+     width:100%;
+     text-align:center;
+}
+
+footer>section:nth-child(2)>div>form>input{
+     margin:10px;
+     width:50%
+}
+
+footer>section:nth-child(2)>div>form>textarea{
+     margin:10px;
+     width:50%
+}
+
+/*Styling the footer submit button*/
+footer>section:nth-child(2)>div>form>button{
+    padding: 10px 40px;
+    color: black;
+    background-color: #caefe3;
+    text-align: center;
+    border-radius: 5px;
+    font-size:large;
+}
+
+
+
+/* Shopping page styling */
+
+/*General shop styling*/
+.M-Ashop{
+    background-color: #caefe3;
+}
+
+/*Aligning all content inside the section*/
+.M-Ashop>main>section{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+
+/*styling all div inside the section*/
+.M-Ashop>main>section>div{
+    width: 33%;
+    height: auto;
+    display: flex;
+    /*collumn to make all buttons go below the images*/
+    flex-direction: column;
+    /*flex-end to make align them at the botton*/
+    justify-content: flex-end;
+    align-items: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
+
+}
+
+.M-Ashop>main>section>div>img{
+    width: 80%;
+    height: auto;
+}
+
+/*Styling all submit buttons*/
+.M-Ashop>main>section>div>a{
+    padding: 10px 40px;
+    color: white;
+    background-color: #052d0cfc;
+    text-align: center;
+    border-radius: 5px;
+}
+
+/*Classic Mood ring (Product 1) Styling*/
+
+/*general product 1 styling*/
+.M-Aproduct1{
+    background-color: #caefe3;
+}
+
+/*aligning all content ventically*/
+.M-Aproduct1>main{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.M-Aproduct1>main>section{
+    display: flex;
+    align-items: center;
+    /*To make the forms stay at the right */
+    justify-content:right;
+}
+
+/*styling the div contaning the image and form*/
+.M-Aproduct1>main>section>div{
+    text-align: center;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    width: 33%;
+}
+
+/*div contaning the form styling*/
+.M-Aproduct1>main>div{
+    text-align: center;
+    padding-top: 10px;
+    width: 33%;
+    padding-bottom: 10px;
+    height: auto;
+}
+
+.M-Aproduct1>main>section>div>img{
+    width: 100%;
+    height: auto;
+}
+
+/*General input styling*/
+.M-Aproduct1>main>div:nth-child(2)>form>input{
+    margin-top:10px;
+    margin-bottom:10px;
+}
+
+.M-Aproduct1>main>div:nth-child(2)>form>input:nth-child(5){
+    width: 16%;
+}
+
+.M-Aproduct1>main>div:nth-child(2)>form>input:nth-child(6){
+    width: 16%;
+}
+
+/*Finish button styling*/
+.M-Aproduct1>main>div:nth-child(2)>form>button{
+    padding: 10px 40px;
+    color: white;
+    background-color: #052d0cfc;
+    text-align: center;
+    border-radius: 5px;
+    font-size:large;
+}
+
+
+/*Valentine's day special edition mood ring (Product 2) shop*/
+
+/*general product 2 styling*/
+.M-Aproduct2{
+    background-color: #caefe3;
+}
+
+/*aligning all content ventically*/
+.M-Aproduct2>main{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.M-Aproduct2>main>section{
+    display: flex;
+    align-items: center;
+     /*To make the forms stay at the right */
+    justify-content:right;
+    width:62%
+}
+/*styling the div contaning the image and form*/
+.M-Aproduct2>main>section>div{
+    width:300px;
+    text-align: center;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+/*div contaning the form styling*/
+.M-Aproduct2>main>div{
+    text-align: center;
+    padding-top: 10px;
+    width: 33%;
+    padding-bottom: 10px;
+    height: auto;
+}
+.M-Aproduct2>main>section>div>img{
+    width: 100%;
+    height: auto;
+}
+
+.M-Aproduct2>main>section>div>img{
+    width: 100%;
+    height: auto;
+}
+/*General input styling*/
+.M-Aproduct2>main>div:nth-child(2)>form>input{
+    margin-top:10px;
+    margin-bottom:10px;
+}
+
+.M-Aproduct2>main>div:nth-child(2)>form>input:nth-child(5){
+    width: 16%;
+}
+
+.M-Aproduct2>main>div:nth-child(2)>form>input:nth-child(6){
+    width: 16%;
+}
+
+/*Finish button styling*/
+.M-Aproduct2>main>div:nth-child(2)>form>button{
+    padding: 10px 40px;
+    color: white;
+    background-color: #052d0cfc;
+    text-align: center;
+    border-radius: 5px;
+    font-size:large;
+}
+
+/*Necklace mood ring (Prduct 3) shop*/
+
+/*general product 3 styling*/
+.M-Aproduct3{
+    background-color: #caefe3;
+}
+
+/*aligning all content ventically*/
+.M-Aproduct3>main{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.M-Aproduct3>main>section{
+    display: flex;
+    align-items: center;
+    /*To make the forms stay at the right */
+    justify-content:right;
+    width:62%
+}
+/*styling the div contaning the image and form*/
+.M-Aproduct3>main>section>div{
+    width:300px;
+    text-align: center;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+/*div contaning the form styling*/
+    .M-Aproduct3>main>div{
+    text-align: center;
+    padding-top: 10px;
+    width: 33%;
+    padding-bottom: 10px;
+    height: auto;
+}
+.M-Aproduct3>main>section>div>img{
+    width: 100%;
+    height: auto;
+}
+
+.M-Aproduct3>main>section>div>img{
+    width: 100%;
+    height: auto;
+}
+
+/*General input styling*/
+.M-Aproduct3>main>div:nth-child(2)>form>input{
+    margin-top:10px;
+    margin-bottom:10px;
+}
+
+.M-Aproduct3>main>div:nth-child(2)>form>input:nth-child(5){
+    width: 16%;
+}
+
+.M-Aproduct3>main>div:nth-child(2)>form>input:nth-child(6){
+    width: 16%;
+}
+
+/*Finish button styling*/
+.M-Aproduct3>main>div:nth-child(2)>form>button{
+    padding: 10px 40px;
+    color: white;
+    background-color: #052d0cfc;
+    text-align: center;
+    border-radius: 5px;
+    font-size:large;
+}
+
+/*About us page styling*/
+
+/*General main styling*/
+.M-AaboutUS>main{
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    background-color: #caefe3;
+}
+
+.M-AaboutUS>main>div{
+    padding-left: 10px;
+}
+
+.M-AaboutUS>main>div:nth-child(2)>h2{
+    font-size: medium;
+}
+
+/*Aligning the text and the video*/
+.M-AaboutUS>main>section{
+    padding-bottom:10px;
+    text-align:center
+}
+
+.M-AaboutUS>main>section>div{
+    padding-left:10px;
+    padding-right:10px;
+}
+
+/*Contact us styling*/
+
+/*General main styling*/
+.M-AContactUS>main{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #caefe3;
+}
+
+/*Align all content*/
+.M-AContactUS>main>section{
+    display: flex;
+}
+
+/*center the forms*/
+.M-AContactUS>main>section>div:nth-child(2)>form{
+    text-align: center;
+}
+
+.M-AContactUS>main>section>div:nth-child(2)>form>input{
+    margin: 10px;
+}
+
+.M-AContactUS>main>section>div:nth-child(2)>form>textarea{
+    width: 300px;
+    height: 60px;
+}
+
+.M-AContactUS>main>section>div{
+    width: 33%;
+}
+
+/*Social media logos styling*/
+.M-AContactUS>main>section>div>ul{
+    text-align: center;
+    list-style: none;
+}
+
+.M-AContactUS>main>section>div>ul>li{
+    padding-top:20px;
+    padding-bottom:20px;
+}
+
+/*Submit button styling*/
+.M-AContactUS>main>section>div:nth-child(2)>form>button{
+    padding: 10px 40px;
+    color: white;
+    background-color: #052d0cfc;
+    text-align: center;
+    border-radius: 5px;
+    font-size:large;
+}
+
+
+/*Mobile styling*/
+
+/*index*/
+
+/* Tablet view */
+
+@media (width: 768px) {
+    
+    /*General styling*/
+
+    /*Adjusting the proportions*/
+    
+    header>div>nav{
+        padding-right:20px;
+    }
+
+    /*Hide the original nav*/
+    header > div > nav > .nav-links {
+      display: none;
+          
+    }
+  
+    header > div > nav > .nav-links.active {
+      display: flex;
+    }
+  
+    header > div > .menu-toggle {
+      display: flex;
+    }
+
+    .masthead>div>h1{
+        width:500px;
+    }
+
+    .M-A>aside>div>img{
+        width: 100%;
+    }
+
+    .M-A>main>div{
+        padding-left:50px;
+    }
+  }
+
+  /*phone L*/
+
+  @media (width:425px){
+
+    /*General styling*/
+
+    /*Adjusting the proportions*/
+    
+
+    header>div>nav{
+        padding-right:20px;
+    }
+
+    /*Hide the original nav*/
+    header > div > nav > .nav-links {
+      display: none;
+    }
+  
+    header > div > nav > .nav-links.active {
+      display: flex;
+      flex-direction:column;
+    }
+  
+    header > div > .menu-toggle {
+      display: flex;
+    }
+
+    .masthead>div{
+        text-align:center;
+    }
+
+    .masthead>div>h1{
+        font-size:50px;
+    }
+    
+    .M-A>main>section{
+        display:flex;
+        flex-direction:column;
+        align-items:center;
+        justify-content:center;
+    }
+
+    .M-A>main>section>div>h2{
+        font-size:large
+    }
+
+    .M-A>aside>div{
+        height:50%
+    }
+    
+    .M-A>aside>div>img{
+        height:200px;
+        width:130px;
+    }
+
+
+    footer>section:nth-child(3)>div:nth-child(2){
+        display:flex;
+        flex-direction:column
+    }
+  
+
+}
+
+/*phone m*/
+
+@media (width:375px){
+
+    header>div>nav{
+        padding-right:20px;
+    }
+
+    /*Hide the original nav*/
+    header > div > nav > .nav-links {
+      display: none;
+    }
+  
+    header > div > nav > .nav-links.active {
+      display: flex;
+      flex-direction:column;
+    }
+  
+    header > div > .menu-toggle {
+      display: flex;
+    }
+
+    .masthead>div{
+        text-align:center;
+    }
+
+    .masthead>div>h1{
+        font-size:50px;
+    }
+    
+    .M-A>main>section{
+        display:flex;
+        flex-direction:column;
+        align-items:center;
+        justify-content:center;
+    }
+
+    .M-A>main>section>div>h2{
+        font-size:large
+    }
+
+    .M-A>aside>div{
+        height:50%
+    }
+    
+    .M-A>aside>div>img{
+        height:200px;
+        width:110px;
+    }
+
+    footer{
+        flex-direction:column;
+        justify-content:center;
+        align-items:center;
+    }
+
+    footer>section:nth-child(1)>div{
+        text-align:center;
+    }
+
+    footer>section:nth-child(2){
+        padding-left:40px;
+    }
+  
+
+}
+
+@media (width: 320px){
+     header>div>nav{
+        padding-right:20px;
+    }
+
+    /*Hide the original nav*/
+    header > div > nav > .nav-links {
+      display: none;
+    }
+  
+    header > div > nav > .nav-links.active {
+      display: flex;
+      flex-direction:column;
+    }
+  
+    header > div > .menu-toggle {
+      display: flex;
+    }
+
+    .masthead>div{
+        text-align:center;
+    }
+
+    .masthead>div>h1{
+        font-size:50px;
+    }
+    
+    .M-A>main>section{
+        display:flex;
+        flex-direction:column;
+        align-items:center;
+        justify-content:center;
+    }
+
+    .M-A>main>section>div>h2{
+        font-size:large
+    }
+
+    .M-A>aside>div{
+        height:50%
+    }
+    
+    .M-A>aside>div>img{
+        height:200px;
+        width:100px;
+    }
+
+    footer{
+        flex-direction:column;
+        justify-content:center;
+        align-items:center;
+    }
+
+    footer>section:nth-child(1)>div{
+        text-align:center;
+    }
+
+    footer>section:nth-child(2){
+        padding-left:40px;
+    }
+}
+
+/*About us*/
+
+/*phone L*/
+
+    /*General styling*/
+
+    /*Adjusting the proportions*/
+
+@media (width: 425px){
+
+    .M-AaboutUS>main>section{
+        flex-direction:column;
+        text-align:center
+    }
+
+    .M-AaboutUS>main>section>div>iframe{
+        width:350px;
+        
+    }
+}
+
+/*phone M*/
+
+    /*General styling*/
+
+    /*Adjusting the proportions*/
+
+@media (width: 375px){
+
+.M-AaboutUS>main>section{
+        flex-direction:column;
+        text-align:center
+    }
+
+    .M-AaboutUS>main>section>div>iframe{
+        width:350px;
+        
+    }
+}
+
+/*phone s*/
+
+    /*General styling*/
+
+    /*Adjusting the proportions*/
+
+@media (width: 320px){
+
+.M-AaboutUS>main>section{
+        flex-direction:column;
+        text-align:center
+    }
+
+    .M-AaboutUS>main>section>div>iframe{
+        width:310px;
+        
+}
+
+}
+
+
+
+/*Contact us*/
+
+/*tablet*/
+
+    /*General styling*/
+
+    /*Adjusting the proportions*/
+
+@media (width: 768px){
+    
+    .M-AContactUS>main>section>div>h2{
+        font-size:large
+    }
+}
+
+/*phone L*/
+
+    /*General styling*/
+
+    /*Adjusting the proportions*/
+@media (width: 425px){
+
+    .M-AContactUS>main>section{
+        flex-direction:column;
+        align-items:center
+    }
+
+    .M-AContactUS>main>section>div{
+        text-align:center
+    }
+
+    .M-AContactUS>main>section>div:nth-child(1)>h2:nth-child(3){
+        font-size:20px
+    }
+
+    .M-AContactUS>main>section>div:nth-child(2)>form>textarea{
+        width: 200px;
+        height: 60px;
+    }
+}
+
+/*phone m*/
+
+    /*General styling*/
+
+    /*Adjusting the proportions*/
+
+@media (width: 375px){
+
+    .M-AContactUS>main>section{
+        flex-direction:column;
+        align-items:center
+    }
+
+    .M-AContactUS>main>section>div{
+        text-align:center
+    }
+
+    .M-AContactUS>main>section>div:nth-child(1)>h2:nth-child(3){
+        font-size:20px
+    }
+
+    .M-AContactUS>main>section>div:nth-child(2)>form>textarea{
+        width: 200px;
+        height: 60px;
+    }
+}
+
+/*phone s*/
+
+    /*General styling*/
+
+    /*Adjusting the proportions*/
+
+@media (width: 320px){
+
+    .M-AContactUS>main>section{
+        flex-direction:column;
+        align-items:center
+    }
+
+    .M-AContactUS>main>section>div{
+        text-align:center
+    }
+
+    .M-AContactUS>main>section>div:nth-child(1)>h2:nth-child(3){
+        font-size:17px
+    }
+
+    .M-AContactUS>main>section>div:nth-child(2)>form>textarea{
+        width: 200px;
+        height: 60px;
+    }
+}
+
+/*Shopping*/
+
+/*phone L*/
+
+    /*General styling*/
+
+    /*Adjusting the proportions*/
+
+@media (width:425px){
+
+    .M-Ashop>main>section>div{
+        text-align:center
+    }
+   
+   .M-Ashop>main>section>div>h2{
+       font-size:medium;
+   }
+}
+
+/*phone M*/
+
+    /*General styling*/
+
+    /*Adjusting the proportions*/
+
+@media (width:375px){
+
+    .M-Ashop>main>section>div{
+        text-align:center
+    }
+   
+   .M-Ashop>main>section>div>h2{
+       font-size:large;
+   }
+}
+
+/*phone S*/
+
+    /*General styling*/
+
+    /*Adjusting the proportions*/
+
+@media (width:320px){
+
+    .M-Ashop>main>section>div{
+        text-align:center
+    }
+   
+   .M-Ashop>main>section>div>h2{
+       font-size:medium;
+   }
+
+   .M-Ashop>main>section>div>a{
+       font-size:small
+   }
+}
+
+/*products*/
+
+    /*General styling*/
+
+    /*Adjusting the proportions*/
+
+/*Applied the same styling to all screens since all prodcuts follow  the same format*/
+@media (min-width: 320px) and (max-width: 425px){
+    
+    .M-Aproduct1 > main > section,
+.M-Aproduct2 > main > section,
+.M-Aproduct3 > main > section{
+        flex-direction:column;
+    }
+    .M-Aproduct1>main>div>form>input#cvv,
+    .M-Aproduct2>main>div>form>input#cvv,
+    .M-Aproduct3>main>div>form>input#cvv{
+        width:40px
+    }
+    .M-Aproduct1>main>div>form>input#expiration-date,
+    .M-Aproduct2>main>div>form>input#expiration-date,
+    .M-Aproduct3>main>div>form>input#expiration-date{
+        width:40px
+    }
+    }
+
+

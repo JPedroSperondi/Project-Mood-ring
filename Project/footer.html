@@ -1,0 +1,43 @@
+<!--global footer created outside the main file-->
+
+<!--The entire footer is a flexbox to give each section it's own space-->
+<footer>
+    
+    <!--Section at the left to contain all the contact information-->
+    <section>
+        <div>
+            <h2>Contact us</h2>
+            <h2>email: moodrings@gmail.com</h2>
+            <h2>phone: (437)-3644-112</h2>
+            <h2>Adress: randomaddress</h2>
+        </div>
+    </section>
+   <!--Section at the center to contain the "quick" contact us form-->
+    <section>
+        <div>
+            <!--Form containing all inputs-->
+            <form id="Footercomment" method="post">
+                <!--all id's will be used to call them later at the global.js-->
+                <input type="email" id="emailFooter" name="email" placeholder="Email" required>
+                <br>
+                <input type="tel" name="phone" id="phoneFooter" pattern="[0-9]{3}[0-9]{3}[0-9]{4}" placeholder="Phone number" required>
+                <br>
+                <textarea placeholder="Please leave us a comment" id="commentFooter" required></textarea>
+                <br>
+                <button type="submit">Submit</button>
+            </form>
+        </div>    
+</section>
+    <!--Section at the right containing the follow us text and the social media characters-->
+    <section>
+        <div>
+            <h2>Follow us</h2>
+        </div>
+        <div>
+            <li><a href="#"><i class="fa-brands fa-tiktok"></i></a></li>
+            <li><a href="#"><i class="fa-brands fa-instagram"></i></a></li>
+            <li><a href="#"><i class="fa-brands fa-facebook"></i></a></li>
+        </div>
+        
+    </section>
+</footer>

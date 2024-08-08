@@ -1,0 +1,110 @@
+<!doctype html>
+<html lang="en">
+<head>
+
+<!--metadatas-->
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="HTML/CSS Project">
+<meta name="robots" content="noindex,nofollow">
+<title> Project Mood Rings/Contact us </title>
+<!--fonts-->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="./fontawesome/css/all.css">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+<!--jQuery-->
+<script
+  src="https://code.jquery.com/jquery-3.7.1.min.js"
+  integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo="
+  crossorigin="anonymous"></script>
+
+<!--Add my CSS file-->
+<link rel="stylesheet" href="./CSS/style.css">
+<!--Add my java file-->
+<script src="./JS/global.js"></script>
+
+</head>
+
+<body>
+
+<!--header containing logo and navigation-->
+<!--Calling the global header-->
+
+<div id="header"></div>
+
+
+
+<!--Calling global masthead-->
+
+<div id="masthead"></div>
+
+<!--Class to contain the main-->
+<!--There is no aside here, but i still need to put my main inside a class.
+Otherwise i wouldn't be able to style everything in a single CSS page because i wouldn't be able to target a specific main -->
+
+<div class="M-AContactUS">
+
+<!--Main containing all the contact information-->
+<main>
+
+    <!--Div contaning the "title" of the page at the top of the main-->
+    <div>
+        <h1>Contact us</h1>
+    </div>
+    
+    <!--Section to contain all three divs-->
+    <section>
+    
+    <!--First div containing the text-->
+    <div>
+        <!--Informations like number, email and address-->
+        <h2>You can contact us by:</h2>
+        <br>
+        <h2>Email: moodrings@gmail.com</h2>
+        <br>
+        <h2>Phone: (437)-3644-112</h2>
+        <br>
+        <h2>Visiting us: randomaddress</h2>
+    </div>    
+    <!--Second div contaning the form for the complete "contact us"-->
+    <div>
+        <!--Form contaning the inputs -->
+        <form id="contactUS" method="post">
+            
+            <input type="text" name="name" id="nameContact"  placeholder="Name" required>
+            <br>
+            <input type="email" name="email" id="emailContact" placeholder="Email" required>
+            <br>
+            <input type="tel" name="phone" id="phoneContact" pattern="[0-9]{3}[0-9]{3}[0-9]{4}" placeholder="Phone number" required>
+            <br>
+            <textarea placeholder="Write your comment" id="commentContact" required></textarea>
+            <br>
+            <button type="Submit">Submit</button>
+        </form>
+    </div>
+
+    <!--Third div contaning the text and social media logos-->
+    <div>
+        <h2>Don't forget to follow us for new products!</h2>
+    <ul>
+        <li><a href="#"><i class="fa-brands fa-tiktok"></i> Tiktok</a></li>
+        <li><a href="#"><i class="fa-brands fa-instagram"></i> Instagram</a></li>
+        <li><a href="#"><i class="fa-brands fa-facebook"></i> Facebook</a></li>
+    </ul>
+    </div>
+    </section>
+
+    
+</main>
+
+</div>
+
+<!--Calling the global footer-->
+<div id="footer"></div>
+
+
+
+</body>
+
+</html>

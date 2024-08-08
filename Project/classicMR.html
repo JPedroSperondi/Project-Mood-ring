@@ -1,0 +1,95 @@
+<!doctype html>
+<html lang="en">
+<head>
+
+<!--metadatas-->
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="HTML/CSS Project">
+<meta name="robots" content="noindex,nofollow">
+<title> Project Mood Rings/classic mood ring shop </title>
+<!--fonts-->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="./fontawesome/css/all.css">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+<!--jQuery-->
+<script
+  src="https://code.jquery.com/jquery-3.7.1.min.js"
+  integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo="
+  crossorigin="anonymous"></script>
+
+<!--Add my CSS file-->
+<link rel="stylesheet" href="./CSS/style.css">
+<!--Add my java file-->
+<script src="./JS/global.js"></script>
+
+<body>
+
+<!--header containing logo and navigation-->
+<!--Calling the global header-->
+
+<div id="header"></div>
+
+
+
+<!--global Masthead-->
+
+<div id="masthead"></div>
+
+<!--Class to contain the main-->
+<!--There is no aside here, but i still need to put my main inside a class.
+Otherwise i wouldn't be able to style everything in a single CSS page because i wouldn't be able to target a specific main -->
+<div class="M-Aproduct1">
+
+    <!--Main contaning the Image, text and forms-->
+    <main>
+    
+    <!--Section to contain the text, image and the price form-->
+    <section>
+    <div>
+        <h1>Classic Mood ring</h1>
+        <img src="./IMG/mood_ring.jpg" alt="image">
+    </div>
+    <div>
+        <!--Form to contain the amount of products-->
+        <form id="classicMRprice" method="post">
+            <input type="number" name="amount" id="amount" min="1" value="1" placeholder="Insert the amount" required>
+            <!--span to contain the final value-->
+            <p>Final value: $<span id="finalprice1">10</span></p>
+        </form>
+        
+    </div>
+
+    </section>
+    
+    <!--Div to contain the user information form-->
+    <div>
+        <!--form contaning the inputs-->
+        <form id="classicMR" method="post">
+            <input type="text" name="name" id="name"  placeholder="Full name" required>
+            <br>
+            <input type="text" name="card" id="card" pattern="\d{4} \d{4} \d{4} \d{4}"  placeholder="Card number" required>
+            <br>
+            <input type="text" name="cvv" id="cvv" pattern="\d{3,4}"  placeholder="CVV" required>
+            <input type="text" name="expiration-date" id="expiration-date" pattern="(0[1-9]|1[0-2])\/\d{2}" placeholder="MM/YY" required>
+            <br>
+            <input type="tel" name="phone" id="phone" pattern="[0-9]{3}[0-9]{3}[0-9]{4}" placeholder="Phone number" required>
+            <br>
+            <input type="text" name="address" id="address" placeholder="Address" required>
+            <br>
+            <button type="submit">Finish</button>
+        </form>
+    </div>
+    
+    </main>
+
+</div>
+
+<!--calling the global footer-->
+<div id="footer"></div>
+
+
+
+
+</body>
